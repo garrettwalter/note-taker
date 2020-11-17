@@ -4,13 +4,6 @@ const $saveNoteBtn = $(".save-note");
 const $newNoteBtn = $(".new-note");
 const $noteList = $(".list-container .list-group");
 
-var PORT = process.env.PORT || 3001;
-
-app.listen(PORT, function() {
-
-app.get("/", function(req, res) {
-  res.json(path.join(__dirname, "/code/index.html"));
-});
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
