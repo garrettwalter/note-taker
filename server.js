@@ -15,9 +15,9 @@ app.use(express.json());
 
 var path = require("path");
 
-app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
-  });
+// app.get("*", function(req, res) {
+//     res.sendFile(path.join(__dirname, "index.html"));
+//   });
 
   app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
