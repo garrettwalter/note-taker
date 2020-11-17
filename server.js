@@ -16,15 +16,15 @@ app.use(express.json());
 var path = require("path");
 
 app.get("*", function(req, res) {
-    res.json(path.join(__dirname, "./code/index.html"));
+    res.json(path.join(__dirname, "index.html"));
   });
 
   app.get("/", function(req, res) {
-    res.json(path.join(__dirname, "/code/index.html"));
+    res.json(path.join(__dirname, "index.html"));
   });
   
   app.get("/notes", function(req, res) {
-    res.sendFile(path.join(__dirname, "/code/notes.html"));
+    res.sendFile(path.join(__dirname, "notes.html"));
   });
 // =============================================================================
 // LISTENER
