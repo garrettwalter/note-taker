@@ -34,7 +34,7 @@ var path = require("path");
   // These data sources hold arrays of information on table-data, waitinglist, etc.
   // ===============================================================================
   
-  var notesData = require("./code/db/db.json");
+  var notesData = require("db.json");
 
   app.get("/api/notes", function(req, res) {
     res.json(notesData);
