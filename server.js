@@ -21,11 +21,11 @@ var path = require("path");
 //   });
 
   app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "./lib/index.html"));
+    res.sendFile(path.join(__dirname, "./public/index.html"));
   });
   
   app.get("/notes", function(req, res) {
-    res.sendFile(path.join(__dirname, "./lib/notes.html"));
+    res.sendFile(path.join(__dirname, "./public/notes.html"));
   });
 
   //  ===============================================================================
@@ -34,7 +34,7 @@ var path = require("path");
   // These data sources hold arrays of information on table-data, waitinglist, etc.
   // ===============================================================================
   
-  var notesData = require("./lib/db/db.json");
+  var notesData = require("./db/db.json");
 
   app.get("/api/notes", function(req, res) {
     res.json(notesData);
