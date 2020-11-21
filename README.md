@@ -28,9 +28,9 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Video Demonstration
 
-[Video](https://drive.google.com/file/d/11VJhwZc6D59SabmOJnUM72OGoHPU72-R/preview)
+[Video](https://drive.google.com/file/d/1--ei7XjlqZsY7JwZ0XZMo39tmOKRQVFv/view)
 
-In this video you can see that my application is broken. I have tried tirelessly to get my css and data.js file to run on the served website, but can not find a solution. I have tried creating a whole new application, changed how the files are linked multiple times and still get the same outcome. Sometimes in response to the css issue it will say 'incorrect MIME type' and will claim that it is a 'text/html' file, but as you can see it is linked as a 'style/css' file. I have researched this and found no answer.
+As you can see my application almost works, for some reason it says that the function 'notes.ForEach' is not a function. I am stuck here because this was a function that was created by the course for the assignment. 
 
 ## Installation
 
