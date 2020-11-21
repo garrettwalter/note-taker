@@ -31,7 +31,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Installation
 
-To access this application you must visit my GitHub page and locate the repository named "map-my-team". Once this repository is cloned to your computer, you will be able to edit the files. Any questions can be directed to [Garrett Walter](mailto:gtwalter150@gmail.com). This project can be found here: [GitHub Repository](https://github.com/garrettwalter/map-my-team)
+To access this application you must visit this link: [Served via Heroku](https://hidden-lowlands-02936.herokuapp.com/) or to install visit my GitHub page and locate the repository named "note-taker". Once this repository is cloned to your computer, you will be able to edit the files and/or run it on a server. Any questions can be directed to [Garrett Walter](mailto:gtwalter150@gmail.com). This project can be found here: [GitHub Repository](https://github.com/garrettwalter/note-taker)
 
 ## License MIT
 

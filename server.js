@@ -9,16 +9,7 @@ var PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
-// Sets up the Express app to handle data parsing
-// require("./code/routes/apiRoutes")(app);
-// require("./code/routes/htmlRoutes")(app);
-
 var path = require("path");
-
-// app.get("*", function(req, res) {
-//     res.sendFile(path.join(__dirname, "index.html"));
-//   });
 
   app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "./public/home.html"));
@@ -34,8 +25,6 @@ var path = require("path");
 
   //  ===============================================================================
   // LOAD DATA
-  // We are linking our routes to a series of "data" sources.
-  // These data sources hold arrays of information on table-data, waitinglist, etc.
   // ===============================================================================
   
   var notesData = require("./db/db.json");
@@ -45,9 +34,6 @@ var path = require("path");
   });
 
   app.post("/api/notes", function(req, res) {
-    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-    // It will do this by sending out the value "true" have a table
-    // req.body is available since we're using the body parsing middleware
       notesData.push(req.body);
       res.json(true);
   });
